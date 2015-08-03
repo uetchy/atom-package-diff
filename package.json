@@ -1,5 +1,5 @@
 {
-  "name": "brief-history-of-atom",
+  "name": "atom-package-diff",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,10 @@
   "author": "Yasuaki Uechi <uetchy@randompaper.co>",
   "license": "MIT",
   "bin": {
-    "bhoa": "index.js"
+    "apd": "index.js"
   },
   "dependencies": {
-    "babel": "^5.8.12"
+    "babel": "^5.8.12",
+    "colors": "^1.1.2"
   }
 }
