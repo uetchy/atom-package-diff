@@ -1,0 +1,5 @@
+# atom-package-diff
+
+```
+$ apd
+```
