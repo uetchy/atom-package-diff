@@ -1,6 +1,6 @@
 # atom-package-diff
 
-Diff between installed Atom packages and apm stars
+Diff between installed Atom packages and apm stars.
 
 ## Install
 

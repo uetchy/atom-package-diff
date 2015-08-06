@@ -1,16 +1,20 @@
 {
   "name": "atom-package-diff",
   "version": "0.1.0",
-  "description": "",
+  "description": "Diff between installed Atom packages and apm stars",
   "main": "lib/index.js",
   "scripts": {
     "start": "node ./bin/atom-package-diff",
     "build": "babel lib/*.es6 -d ."
   },
-  "keywords": [],
+  "keywords": [
+    "Atom",
+    "apm"
+  ],
   "author": "Yasuaki Uechi <uetchy@randompaper.co>",
   "license": "MIT",
   "bin": {
+    "atom-package-diff": "bin/atom-package-diff",
     "apd": "bin/atom-package-diff"
   },
   "dependencies": {
