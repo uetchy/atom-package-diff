@@ -4,19 +4,26 @@ var apd = require('../lib/atom-package-diff');
 var program = require('commander');
 
 program
-  .version('0.1.0')
-  .description('apd')
+  .version('0.1.0');
 
 program
   .command('status')
-  .action(apd.cmdStatus);
+  .description('show status')
+  .action(apd.showStatus);
 
 program
   .command('sync')
-  .action(apd.cmdSync);
-
-if (!process.argv.slice(2).length) {
-  program.outputHelp();
-}
+  .description('sync packages')
+  .option('-l, --local', 'Sync with local')
+  .option('-r, --remote', 'Sync with remote')
+  .action(function(options){
+    if (options.local) {
+      apd.syncWithLocal();
+    } else if (options.remote) {
+      apd.syncWithRemote();
+    } else {
+      apd.sync();
+    }
+  });
 
 program.parse(process.argv);

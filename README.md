@@ -13,8 +13,8 @@ $ npm install -g atom-package-diff
 ```
 $ apd status
 $ apd sync
-$ apd sync local
-$ apd sync remote
+$ apd sync --local
+$ apd sync --remote
 ```
 
 ## Contribution
