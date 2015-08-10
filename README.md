@@ -2,6 +2,8 @@
 
 Diff between installed Atom packages and apm stars.
 
+![Screenshot](http://randompaper.co.s3.amazonaws.com/apd-ss1.png)
+
 ## Install
 
 ```
