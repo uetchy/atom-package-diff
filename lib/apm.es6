@@ -23,5 +23,5 @@ export function install(pkg) {
 }
 
 export function uninstall(pkg) {
-  execSync('apm uninstall' + pkg)
+  execSync('apm uninstall ' + pkg)
 }
