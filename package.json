@@ -1,6 +1,6 @@
 {
   "name": "atom-package-diff",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Diff between installed Atom packages and apm stars",
   "main": "lib/index.js",
   "scripts": {
