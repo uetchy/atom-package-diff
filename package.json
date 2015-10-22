@@ -1,6 +1,6 @@
 {
   "name": "atom-package-diff",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Diff between installed Atom packages and apm stars",
   "main": "lib/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "chalk": "^1.1.0",
     "commander": "^2.8.1"
   },
-  "devDependencties": {
+  "devDependencies": {
     "babel": "^5.8.12"
   }
 }
