@@ -1,11 +1,12 @@
 {
   "name": "atom-package-diff",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Diff between installed Atom packages and apm stars",
   "main": "lib/index.js",
   "scripts": {
     "start": "node ./bin/atom-package-diff",
-    "build": "babel src/ -d lib/"
+    "build": "babel src/ -d lib/",
+    "publish": "publish-please && npm publish"
   },
   "keywords": [
     "Atom",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
-    "babel-core": "^6.3.13"
+    "babel-core": "^6.3.13",
+    "publish-please": "^1.1.0"
   }
 }
