@@ -19,6 +19,10 @@ $ apd sync --local
 $ apd sync --remote
 ```
 
+## Blog posts
+
+- [インストール済みAtomパッケージとapmのスターをdiffして同期するツール「Atom Package Diff」](http://qiita.com/uetchy/items/affc7b43e19167a90296)
+
 ## Contribution
 
 ```
