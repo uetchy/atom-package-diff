@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./bin/atom-package-diff",
     "build": "babel src/ -d lib/",
-    "prepublish": "npm run build && publish-please"
+    "publish-please": "npm run build && publish-please"
   },
   "keywords": [
     "Atom",
