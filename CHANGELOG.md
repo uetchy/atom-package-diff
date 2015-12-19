@@ -1,6 +1,6 @@
 # ChangeLog
 
-## [0.2.0] - 2015-10-22
+## [1.0.0] - 2015-12-20
 ### Fixed
 - Fix issue when uninstall packages
 
