@@ -1,29 +1,32 @@
 #!/usr/bin/env node
 
-var apd = require('../lib/atom-package-diff');
-var program = require('commander');
+const program = require('commander');
+const apd = require('../lib/atom-package-diff');
+
+program.version('0.2.1');
 
 program
-  .version('0.2.1');
+	.command('status')
+	.description('show status')
+	.action(apd.showStatus);
 
 program
-  .command('status')
-  .description('show status')
-  .action(apd.showStatus);
-
-program
-  .command('sync')
-  .description('sync packages')
-  .option('-l, --local', 'Sync with local')
-  .option('-r, --remote', 'Sync with remote')
-  .action(function(options){
-    if (options.local) {
-      apd.syncWithLocal();
-    } else if (options.remote) {
-      apd.syncWithRemote();
-    } else {
-      apd.sync();
-    }
-  });
+	.command('sync')
+	.description('sync packages')
+	.option('-l, --local', 'Sync with local')
+	.option('-r, --remote', 'Sync with remote')
+	.action(options => {
+		if (options.local) {
+			apd.syncWithLocal();
+		} else if (options.remote) {
+			apd.syncWithRemote();
+		} else {
+			apd.sync();
+		}
+	});
 
 program.parse(process.argv);
+
+if (!program.args.length) {
+	program.help();
+}
